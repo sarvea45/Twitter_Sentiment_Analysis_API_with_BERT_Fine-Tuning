@@ -1,0 +1,11 @@
+﻿FROM python:3.11-slim
+WORKDIR /app
+# Install curl for the mandatory health check (Requirement 1)
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+COPY requirements.txt .
+# Explicitly install the lightweight CPU-only version (180MB)
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+RUN pip install --no-cache-dir -r requirements.txt
+COPY src/ ./src/
+EXPOSE 8501
+CMD ["streamlit", "run", "src/ui.py", "--server.port=8501", "--server.address=0.0.0.0"]
