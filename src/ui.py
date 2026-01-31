@@ -47,7 +47,7 @@ if 'history' not in st.session_state:
 
 # --- Sidebar ---
 with st.sidebar:
-    st.image("https://img.icons8.com/cloud/100/000000/twitter.png", width=80)
+    st.image("https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg", width=60)
     st.title("Sentimates AI")
     st.markdown("---")
     st.markdown("### 📊 Model Stats")
