@@ -1,6 +1,7 @@
 
 
-```markdown
+
+
 # Sentiment Analysis MLOps Pipeline with Fine-Tuned BERT
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white)
@@ -10,7 +11,7 @@
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
 ## 📌 Project Overview
-This project is a production-grade MLOps system that performs **Sentiment Analysis** (Positive/Negative) using a **DistilBERT** model fine-tuned on the IMDb dataset. 
+This project is a production-grade MLOps system that performs **Sentiment Analysis** (Positive/Negative) using a **DistilBERT** model fine-tuned on the IMDb dataset.
 
 It demonstrates a complete end-to-end pipeline:
 1.  **Data Engineering:** Automated preprocessing and class balancing to prevent model bias.
@@ -200,4 +201,3 @@ python scripts/batch_predict.py --input data/processed/test.csv --output results
 
 **Sarvesh**
 *3rd Year B.Tech, Artificial Intelligence & Machine Learning*
-
